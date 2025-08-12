@@ -36,8 +36,12 @@ class BLIK (Payment_Method):
 card_payment = Card (" Omolola", "1234567890123456")
 cash_payment = Cash ("Dmytro")
 blik_payment = BLIK ("Aisha", "123456")
+card_payment = Card("Axelle", "9876543210987654")
+cash_payment = Cash ("Tim")
 
 #Make payments using each method
 card_payment.make_payment(100)
 cash_payment.make_payment(50)
 blik_payment.make_payment(75)
+card_payment.make_payment(200)
+cash_payment.make_payment(1500)
