@@ -25,17 +25,17 @@ class Cash(Payment_Method):
 
 class BLIK (Payment_Method):
 
-    def __init__(self,hoders_name,blik_code):
-        super(). __init__(hoders_name)
+    def __init__(self,holders_name,blik_code):
+        super(). __init__(holders_name)
         self.blik_code = blik_code
 
     def make_payment(self, amount):
         print(f"{self.holders_name} is paying {amount} using BLIK.")
 
 #Create instances of each payment method
-card_payment = Card (" Omolola")
+card_payment = Card (" Omolola", "1234567890123456")
 cash_payment = Cash ("Dmytro")
-blik_payment = BLIK ("Aisha")
+blik_payment = BLIK ("Aisha", "123456")
 
 #Make payments using each method
 card_payment.make_payment(100)
